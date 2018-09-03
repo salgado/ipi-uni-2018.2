@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+
+	<title>Aula de GitHub</title>
+	
+</head>
+
+<style>
+ 
+ body {
+     background-color: rgb(70, 130, 180);
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 10%;
+     font-size: 1em;
+     
+	}
+ 
+ .collapsible {
+    background-color: #eee;
+    color:#444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+	}
+  
+  .active, .collapsible:hover {
+    background-color: #ccc;
+	}
+
+    .content {
+    padding:0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;}
+    .collapsible:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+	}
+
+.active:after {
+    content: "\2796"; 
+	}
+
+</style>
+       
+
+<body>
+ 
+    <h2>Aula de GitHub</h2>
+    <h3>Aluno: Renato Machado</h3>
+	<h5>Grupo:</h5>
+    
+	<ul>
+    	<li>Renato Machado</li>	
+	</ul>
+ 
+	<button class="collapsible">Tutoriais</button>
+
+<div class="content">
+	<p> 1-JavaScript ES6</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IEf1KAcK6A8"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+	<p>2-GitHub</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sy7FGtYUdnI"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+	<p>3-React Native</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4nzwcQq6sEg"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+
+<br><br>
+	
+<form action="index.html">
+
+    <input type="submit" value="Voltar"/>
+	
+</form>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
+
+</body>
+</html>
+
+
+
