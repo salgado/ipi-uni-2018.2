@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt" class="pc supports csstransforms csstransforms3d mobile">
+	<head>
+	<meta charset="utf-8">
+	<style>
+ .collapsible {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+	font-family: calibri;
+    font-size: 20px;
+	}
+  
+  .active, .collapsible:hover {
+    background-color: #000000;
+	}
+    .content {
+    padding:0 18px;
+    background-color: #F2F1BC;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;}
+    .collapsible:after {
+    content: '\02795'; 
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+	}
+.active:after {
+    content: "\2796"; 
+	}
+.content{
+  font-family:calibri;
+  font-size:30px;
+  
+  }
+</style>
+	<title>Aula de Github</title>
+	
+		<table border="0" width="1335" bgcolor="white" cellspacing="10" cellpadding="8">
+		<tr height="10" bgcolor="e7e7e7">
+			<td>
+			<a href="leticia.html"> <img src="gitzinho.png"></a>
+			</td>
+				</tr>
+		<tr height="50" bgcolor="#323232">
+			<td align="left">
+			<i><font face="corbel">
+			<font face="calibri" size="5" color="white">
+				<b>Nome: Leticia Lima<p></p>
+				Grupo: Mariana Oliveira e Leticia Lima</b>
+				</font>
+			</font></i>
+			</td>
+			</tr>
+				<tr height="350">
+				<td align="center">
+				<button class="collapsible">Tutoriais</button>
+
+<div class="content">
+	<p> 1- Tutorial JavaScript ES6</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Jakoi0G8lBg"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+	<p>2- Tutorial GitHub Básico</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UbJLOn1PAKw"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+	<p>3- Tutorial React Native Básico</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XcU9GEUZTQA"
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+</div>
+						<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+	</script>
+	<br><br>
+						<form action="index.html">
+
+    <input type="submit" value="Voltar"/>
+	
+</form>
+
+						 </center>
+						 </body>
+						</td>
+					</tr>
+
+</head>
+	</html>
